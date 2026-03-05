@@ -32,5 +32,3 @@ func main(){
 		fmt.Println("Pilihan tidak valid")
 	}
 }
-
-tes
