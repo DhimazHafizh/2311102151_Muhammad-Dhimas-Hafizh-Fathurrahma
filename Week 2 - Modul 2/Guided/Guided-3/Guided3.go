@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	var pilihan, angka int
 
 	fmt.Println("-- MENU --")
@@ -11,7 +11,7 @@ func main(){
 	fmt.Print("masukkan pilihan : ")
 	fmt.Scan(&pilihan)
 
-	switch pilihan{
+	switch pilihan {
 	case 1:
 		fmt.Print("masukkan angka : ")
 		fmt.Scan(&angka)
@@ -23,9 +23,9 @@ func main(){
 	case 2:
 		fmt.Print("masukkan angka : ")
 		fmt.Scan(&angka)
-		if angka % 2 == 0 {
+		if angka%2 == 0 {
 			fmt.Println("angka genap")
-		} else if angka % 2 != 0 {
+		} else if angka%2 != 0 {
 			fmt.Println("angka ganjil")
 		}
 	default:
