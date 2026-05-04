@@ -2,30 +2,30 @@ package main
 
 import "fmt"
 
-func hitungTotalBelanja(harga int, jumlah int){
+func hitungTotal(harga, jumlah float64) {
 	var total int
 	total = harga * jumlah
-	fmt.Println("total harga : ", total)
+	fmt.Println("Total harga = ", total)
 
 	hitungDiskon(total)
 }
 
-func hitungDiskon(total int){
+func hitungDiskon(total int) {
 	var diskon, hargaAkhir int
-	diskon = total * 10/100 //contoh diskon 10%
+	diskon = total * 10 / 100 //contoh diskon 10%
 	hargaAkhir = total - diskon
 
 	fmt.Println("Diskon 10% : ", diskon)
-	fmt.Println("harga akhir (setelah diskon): ", hargaAkhir)
+	fmt.Println("Harga setelah diskon : ", hargaAkhir)
 }
 
-func main(){
-	var harga, jumlah int
+func main() {
+	var price, qty int
 
-	fmt.Print("masukkan harga : ")
-	fmt.Scan(&harga)
-	fmt.Print("masukkan jumlah : ")
-	fmt.Scan(&jumlah)
+	fmt.Print("Masukkan harga barang : ")
+	fmt.Scan(&price)
+	fmt.Print("Masukkan jumlah barang : ")
+	fmt.Scan(&qty)
 
-	hitungTotalBelanja(harga, jumlah)
+	hitungTotal(price, qty)
 }

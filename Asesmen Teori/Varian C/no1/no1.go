@@ -1,0 +1,21 @@
+package main
+
+import "fmt"
+
+func main() {
+	var n int
+	fmt.Scan(&n)
+	for i := 1; i <= n; i += 2 {
+		fmt.Println(i)
+	}
+}
+
+/*
+misal, jika input nya 10,outputnya:
+1
+3
+5
+7
+9
+
+*/

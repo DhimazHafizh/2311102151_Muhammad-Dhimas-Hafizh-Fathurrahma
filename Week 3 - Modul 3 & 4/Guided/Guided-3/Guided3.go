@@ -2,23 +2,23 @@ package main
 
 import "fmt"
 
-func tambahValue(x int) {
+func tambahValue(x int)float64{
 	x = x + 10
-	fmt.Println("Nilai x didalam prosdur tambahValue (pass by value) : ", x)
+	fmt.Println("Nilai x didalam prosedur tambahValue (pass by value) : ", x)
 }
 
-func tambahReference(x *int) {
+func tambahReference(x *int){
 	*x = *x + 10
-	fmt.Println("Nilai x didalam prosdur tambahReference (pass by refeence) : ", *x)
+	fmt.Println("Nilai x didalam prosedur tambahReference (pass by reference) : ", *x)
 }
 
-func main() {
+func main(){
 	var y int = 5
-
-	fmt.Println("nilai y awal : ", y)
+	fmt.Println("Nilai awal : ", y)
+	
 	tambahValue(y)
-	fmt.Println("nilai y setelah pass by value : ", y)
+	fmt.Println("Nilai y setelah pass by value : ", y)
 
 	tambahReference(&y)
-	fmt.Println("nilai y setelah pass by reference : ", y)
+	fmt.Println("Nilai y setelah pass by reference : ", y)
 }
